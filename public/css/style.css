@@ -9,6 +9,7 @@
     --Verde: #39b54a;
 }
 
+/* Estructura */
 body {
 
     font-family: "roboto", sans-serif;
@@ -19,17 +20,71 @@ header {
     background-color: var(--Amarillo);
 }
 
-.burger-menu {
-    text-align: center;
-    padding: 10px;
+article {
+    
 }
 
-.pagos {
+.burger-menu {
+    text-align: center;
+    padding: 20px;
+}
+
+
+.formas_pagos {
     text-align: center;
 }
 
 footer {
     background-color: var(--Gris-claro);
+}
+
+/* Titulos */
+
+
+.titulares {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.precio {
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--Verde);
+}
+
+.descuento {
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--Azul);
+}
+
+.descripcion {
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--Azul);
+}
+
+
+#buscador {
+    /* background-color: white; */
+    color: black;
+    font-size: 1em;
+    padding: 20px;
+    border-radius: 10%;
+    /*   text-align: center; */
+}
+
+
+
+/* iconos */
+
+.fa-bars {
+    color: white;
+    background-color: var(--Celeste);
+    font-size: 2em;
+    padding: 2%;
+    margin: 1%;
+    border-radius: 10%;
 }
 
 .fa-credit-card {
@@ -49,32 +104,13 @@ footer {
     font-size: 2em;
     color: var(--Azul);
 }
-.precio {
-    font-size: 20px;
-    font-weight: bold;
-    color: var(--Verde);
-}
 
-#buscador{
+.fa-search {
     background-color: white;
-    color: black;
-    font-size: 1em;
-    padding: 20px;
-    border-radius: 10%;
-    text-align: center;
+    border-radius: 20%;
+    padding: 1px;
+    border: solid 1px black;
 }
 
-.fa-bars{
-    color: white;
-    background-color: var(--light-blue);
-    font-size: 2em;
-    padding: 2%;
-    margin: 1%;
-    border-radius: 10%;
-}
-
-.burger-menu{
-    text-align: center;
-    padding: 20px;
-}
-
+/* Elementos particulares */
+#logo {}
