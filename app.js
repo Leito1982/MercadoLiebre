@@ -12,7 +12,7 @@ const path = require ('path');
 let PORT = 3030
 
 // pongo en recepcion de request
-app.listen (PORT, console.log ('el servidor esta funcionando') );
+app.listen (PORT, console.log ('el servidor esta funcionando '+ PORT) );
 
 // para tener acceso a los archivos de contenido NO OLVIDAR DE PONERLO
 app.use (express.static('public'));

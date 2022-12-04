@@ -1,4 +1,8 @@
 /* para declarar la paleta de colores, fuentes, tamanio y cualquier cosa para declarar */
+* {
+box-sizing: border-box;
+}
+
 
 :root {
     --Amarillo: #EAC926;
