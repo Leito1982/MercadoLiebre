@@ -24,9 +24,9 @@ header {
     background-color: var(--Amarillo);
 }
 
-article {
+/*article {
     
-}
+}*/
 
 .burger-menu {
     text-align: center;
@@ -117,4 +117,6 @@ footer {
 }
 
 /* Elementos particulares */
-#logo {}
+/* #logo {
+
+}*/
