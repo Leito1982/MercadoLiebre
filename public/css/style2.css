@@ -1,0 +1,183 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --Amarillo: #EAC926;
+    --Azul: #03264C;
+    --Celeste: #1259c3;
+    --Gris-oscuro: #666;
+    --Gris-claro: #ebebeb;
+    --Verde: #39b54a;
+}
+
+body {
+    font-family: 'roboto', sans-serif;
+    font-size: 12px;
+    background-color: var(--Gris-claro)
+}
+
+.encabezado {
+    background-color: var(--Amarillo);
+    padding: 20px;
+}
+
+.primera-linea {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.barra-busqueda{
+    display: inline-block;
+    width: 45%;
+     text-align: center;
+}
+.campo {
+    width: 80%;
+    color: red;
+}
+
+p.frase {   
+    font-size: 1em;
+    text-align: center;
+    width: 100px;
+}
+
+#logo {
+    width: 40%;
+}
+
+.hamburguesa {
+    text-align: center;
+    width: 30px;
+    color: white;
+    background-color: var(--Celeste);
+    font-size: 1em;
+    padding: 1%;
+    margin: auto;
+    border-radius: 10%;
+}
+
+.menu ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0;
+}
+
+
+footer section {
+    text-align: center;
+    margin: 0px;
+}
+
+#copyright {
+    text-align: left;
+}
+
+/* TITULARES */
+
+* Titulos */
+
+.imagenes {
+    width: 50%;
+}
+
+.titulares {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.precio {
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--Azul);
+} 
+
+.descuento {
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--Verde);
+}
+
+.descripcion {
+    display: none;
+}
+
+
+
+/* ICONOS */
+
+.fa-credit-card,
+.fa-gift,
+.fa-user-shield {
+    margin-bottom: 10px;
+    font-size: 2em;
+    color: var(--Azul);
+}
+
+
+/* MOVIL */
+
+.menu {
+    display: none;
+}
+
+
+
+/* TABLET */
+
+@media (min-width:700px) {
+    
+    .encabezado {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    #logo {
+        width: 200px;
+    }
+
+    p.frase {
+        width: 30%;
+    }
+    
+    .hamburguesa {
+        display: none;
+    }
+    
+    .menu {
+        
+        display: flex;
+        justify-content: space-between;
+        background-color: var(--Amarillo);
+    }
+    
+    .lista-izquierda,
+    .lista-derecha {
+        width: 40%;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .descripcion {
+        display: inline;
+        font-size: 16px;
+        font-weight: bold;
+        color: var(--Azul);
+    }
+    
+    
+    footer section {
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+    }
+    
+    #copyright {
+        display: block;
+        text-align: left;
+    }
+
+}

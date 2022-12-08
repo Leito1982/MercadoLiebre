@@ -2,7 +2,7 @@
 * {
     box-sizing: border-box;
     border: dotted 1px black;
-   
+       
 }
 
 :root {
@@ -30,7 +30,7 @@ header {
 }
 
 body {
-
+text-align: center;
     font-family: "roboto", sans-serif;
     font-size: 12px;
 }
@@ -74,13 +74,13 @@ footer {
 .precio {
     font-size: 18px;
     font-weight: bold;
-    color: var(--Verde);
-}
+    color: var(--Azul);
+} 
 
 .descuento {
     font-size: 16px;
     font-weight: bold;
-    color: var(--Azul);
+    color: var(--Verde);
 }
 
 .descripcion {
@@ -180,6 +180,10 @@ footer {
 
     .burger-menu {
         display: none;
+    }
+
+    .producto {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
 }
 
