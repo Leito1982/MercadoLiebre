@@ -20,3 +20,7 @@ app.use (express.static('public'));
 // direcciono el request y le responde con una vista.
 app.get ('/home', (req, res) => res.sendFile (path.join(__dirname + "/views/home.html")));
 app.get ('/', (req, res) => res.sendFile (path.join(__dirname + "/views/home.html")));
+
+app.get ('/login', (req, res) => res.sendFile (path.join(__dirname + "/views/login.html")));
+
+app.get ('/register', (req, res) => res.sendFile (path.join(__dirname + "/views/register.html")));
