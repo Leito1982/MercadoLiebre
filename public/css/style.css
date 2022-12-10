@@ -1,8 +1,8 @@
-/* para declarar la paleta de colores, fuentes, tamanio y cualquier cosa para declarar */
 * {
     box-sizing: border-box;
-    border: dotted 1px black;
-       
+    /* border: dotted red 1px; */
+    margin: 0px;
+    padding: 0px;
 }
 
 :root {
@@ -15,67 +15,123 @@
 }
 
 
-/* Estructura */
-header {
-    background-color: var(--Amarillo);
-    padding: 0px;
+body {
+    font-family: 'roboto', sans-serif;
+    font-size: 12px;
+    background-color: var(--Gris-claro);
     text-align: center;
 }
 
+
 .encabezado {
+    background-color: var(--Amarillo);
+    padding: 10px;
+}
+
+.primera-linea {
     display: flex;
     justify-content: space-around;
+    width: 80%;
+    flex-grow: 1;
+}
+
+.barra-busqueda {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.campo {
+    height: auto;
+    width: 100%;
+    color: red;
+}
+
+p.frase {
+    font-size: 1em;
+    text-align: center;
+}
+
+#logo {
+    width: 100px;
+}
+
+.hamburguesa {
+    text-align: center;
+    width: 30px;
+    color: white;
+    background-color: var(--Celeste);
+    font-size: 1em;
+    padding: 1%;
+    margin: auto;
+    border-radius: 10%;
+}
+
+.menu ul {
+    height: 30px;
+    width: auto;
+    list-style: none;
     align-items: center;
     padding: 5px;
 }
 
-body {
-text-align: center;
-    font-family: "roboto", sans-serif;
-    font-size: 12px;
+.listado-producto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
 }
-
-main{
-    text-align: center;
-    width: 90%;
-}
-
-
 
 .producto {
-    border-top: 1px solid #ebebeb;
-    margin: 15px;
+    display: inline;
+    height: auto;
+    width: 250px;
+    align-items: center;
+    /* border: #03264C 2px solid; */
+    background-color: white;
+    margin: 10px;
 }
 
-
-.search-bar {
-    width: auto;
+.datos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-top: #ebebeb;
 }
 
-.formas_pagos {
-    text-align: center;
+#copyright {
+    text-align: left;
 }
 
 footer {
-    background-color: var(--Gris-claro);
+    background-color: white;
 }
 
-/* Titulos */
+.pagosfooter {
+    width: 70%;
+}
+
+
+/* TITULARES */
 
 .imagenes {
-    width: 50%;
+    width: 100%;
 }
 
 .titulares {
     font-size: 24px;
     font-weight: bold;
+    text-align: left;
+    margin: 15px;
+    color: var(--Gris-oscuro);
 }
 
 .precio {
     font-size: 18px;
     font-weight: bold;
     color: var(--Azul);
-} 
+}
 
 .descuento {
     font-size: 16px;
@@ -83,112 +139,182 @@ footer {
     color: var(--Verde);
 }
 
+
 .descripcion {
-    font-size: 16px;
-    font-weight: bold;
-    color: var(--Azul);
-}
-
-
-/* iconos */
-
-.fa-bars {
-    color: white;
-    background-color: var(--Celeste);
-    font-size: 2em;
-    padding: 1%;
-    margin: 1%;
-    border-radius: 10%;
-}
-
-.fa-credit-card {
+    display: none;
     margin-bottom: 10px;
-    font-size: 2em;
-    color: var(--Azul);
 }
 
-.fa-gift {
-    margin-bottom: 10px;
-    font-size: 2em;
-    color: var(--Azul);
-}
 
+
+/* ICONOS */
+
+.fa-credit-card,
+.fa-gift,
 .fa-user-shield {
     margin-bottom: 10px;
     font-size: 2em;
     color: var(--Azul);
 }
 
-.fa-search {
-    /* background-color: white;*/
-    border-radius: 20%;
-    padding: 0px;
-    margin-left: -25px;
-    font-size: 1em;
-    /* border: solid 1px black;*/
+.fa-truck {
+    margin-bottom: 10px;
+    font-size: 1.3em;
+    color: var(--Verde);
+    border: #39b54a 1px solid;
+    border-radius: 50%;
+    padding: 5px;
 }
 
-/* Elementos particulares */
-#logo {
-    width: 50%;
-    display: inline-block;
-    justify-content: center;
-    align-items: center;
+.fa-bars {
+    color: white;
+}
+
+.fa-search {
+    margin-left: -25px;
+    font-size: 1.5em;
 }
 
 /* MOVIL */
 
-#menu-tablet {
+.menu {
     display: none;
 }
-
-.burger-menu {
-    text-align: center;
-    padding: 0px;
-}
-
-.descripcion {
-    display: none;
-}
-
-
-
 
 /* TABLET */
 
+@media (min-width:700px) {
 
-@media (min-width:361px) {
-
-    #menu-tablet,
-    section,
-    ul {
+    .encabezado {
         display: flex;
-        flex-direction: row;
         justify-content: space-between;
-        /* background-color: var(--Amarillo);*/
-        list-style: none;
+        align-items: center;
     }
 
-
-    #lista {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        margin: 0;
-
+    #logo {
+        width: 180px;
     }
 
-    .burger-menu {
+    p.frase {
+        width: 35%;
+    }
+
+    .hamburguesa {
         display: none;
+    }
+
+    .menu {
+
+        display: flex;
+        justify-content: space-between;
+        background-color: var(--Amarillo);
+    }
+
+    .lista-izquierda,
+    .lista-derecha {
+        font-size: 1.2em;
+
+        display: flex;
+        flex-basis: 350px;
+        justify-content: space-around;
+    }
+
+    .descripcion {
+        display: inline;
+        font-size: 16px;
+        font-weight: bold;
+        color: var(--Azul);
+    }
+
+    .listado-producto {
+        flex-direction: row;
+        flex-wrap: wrap;
     }
 
     .producto {
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
+
+    }
+
+
+    footer {
+        height: auto;
+        width: auto;
+    }
+
+    .pagosfooter {
+        display: flex;
+        height: 100%;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .formas-pagos {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 350pc;
+        font-size: 1.3em;
+        text-align: center;
+    }
+
+    #copyright {
+        display: block;
+        text-align: left;
+    }
+
+}
+
+/* LAPTOP */
+
+@media (min-width:900px) {
+
+    .primera-linea {
+        justify-content: space-around;
+        margin: auto;
+    }
+
+    .barra-busqueda {
+        width: 400px;
+        height: 30px;
+    }
+
+    .campo {
+        height: 30px;
+    }
+
+    p.frase {
+        font-size: 1.5em;
     }
 }
 
-@media (min-width:769px) {
-body {
-    background-color: black;
+/* Formulario */
+
+.formulario {
+    background-color: var(--Gris-claro);
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px;
 }
+
+.campoformulario {
+    border-radius: 50 px;
+    border: none;
+    outline: none;
+    height: 30px;
+    width: 90%;
+}
+
+.enviar {
+
+    border-radius: 50 px;
+    /* border: none; */
+    outline: none;
+    height: 30px;
+    width: 90%;
+    background-color: #1259c3;
+    color: white;
+    font-weight: bold;
 }
