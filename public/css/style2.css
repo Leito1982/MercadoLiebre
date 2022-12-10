@@ -51,7 +51,6 @@ body {
 p.frase {
     font-size: 1em;
     text-align: center;
-    /* width: 100px; */
 }
 
 #logo {
@@ -71,16 +70,16 @@ p.frase {
 
 .menu ul {
     height: 30px;
+    width: auto;
     list-style: none;
     align-items: center;
-    padding: 0;
+    padding: 5px;
 }
 
 .listado-producto {
     display: flex;
     flex-direction: column;
     align-items: center;
-
     justify-content: space-around;
 }
 
@@ -109,15 +108,8 @@ footer {
     background-color: white;
 }
 
-.pagosfooter {
-    display: block;
-}
-
-
 
 /* TITULARES */
-
-
 
 .imagenes {
     width: 100%;
@@ -163,11 +155,15 @@ footer {
 
 .fa-truck {
     margin-bottom: 10px;
-    font-size: 2em;
+    font-size: 1.3em;
     color: var(--Verde);
     border: #39b54a 1px solid;
     border-radius: 50%;
     padding: 5px;
+}
+
+.fa-bars {
+    color: white;
 }
 
 .fa-search {
@@ -181,8 +177,6 @@ footer {
     display: none;
 }
 
-
-
 /* TABLET */
 
 @media (min-width:700px) {
@@ -194,11 +188,11 @@ footer {
     }
 
     #logo {
-        width: 200px;
+        width: 180px;
     }
 
     p.frase {
-        width: 30%;
+        width: 35%;
     }
 
     .hamburguesa {
@@ -214,10 +208,10 @@ footer {
 
     .lista-izquierda,
     .lista-derecha {
-        font-size: 1.3em;
-        width: auto;
+        font-size: 1.2em;
+
         display: flex;
-        padding: auto;
+        flex-basis: 350px;
         justify-content: space-around;
     }
 
@@ -238,31 +232,33 @@ footer {
 
     }
 
+
+    footer {
+        height: auto;
+        width: auto;
+    }
+
+    .pagosfooter {
+        display: flex;
+        height: 100%;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .formas-pagos {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 350pc;
+        font-size: 1.3em;
+        text-align: center;
+    }
+
+    #copyright {
+        display: block;
+        text-align: left;
+    }
+
 }
-
-footer {
-    height: 120px;
-}
-
-.pagosfooter {
-    display: flex;
-    height: 100%;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.formas-pagos {
-    width: 350px;
-    font-size: 1em;
-    text-align: center;
-}
-
-#copyright {
-    display: block;
-    text-align: left;
-}
-
-
 
 /* LAPTOP */
 
@@ -274,8 +270,8 @@ footer {
     }
 
     .barra-busqueda {
-        width: 450px;
-        /* flex-grow: 1; */
+        width: 400px;
+    height: 30px;    
     }
 
     .campo {
@@ -292,11 +288,11 @@ footer {
 .formulario {
     background-color: aqua;
     height: 350px;
-    
+
 }
-.campoformulario
-{
-    
+
+.campoformulario {
+
     display: flex;
     flex-direction: row;
     justify-content: space-between;
