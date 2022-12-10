@@ -290,7 +290,16 @@ footer {
 /* Formulario */
 
 .formulario {
-background-color: aqua;
+    background-color: aqua;
     height: 350px;
+    
+}
+.campoformulario
+{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 
 }

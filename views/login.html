@@ -30,9 +30,7 @@
 
             <!-- Logo + barra de busqueda -->
             <section class="primera-linea">
-                <!-- <div id="logo"> -->
-                <img id="logo" src="/images/logo-mercado-liebre.svg" alt="logo">
-                <!-- </div> -->
+               <a href = "/home"><img id="logo" src="/images/logo-mercado-liebre.svg" alt="logo"> </a> 
                 <div class="barra-busqueda">
                     <input class="campo" type="search-text" placeholder="Buscar productos">
                     <i class="fa fa-search"></i>
@@ -59,23 +57,27 @@
 
 
             <ul class="lista-derecha">
-                <li> <a href="#"> Crea tu cuenta </a> <i class="fa-solid fa-id-card"></i> </li>
-                <li> <a href="#"> Ingresa </a> <i class="fas fa-sign-in-alt"></i> </li>
+                <li> <a href="/register"> Crea tu cuenta </a> <i class="fa-solid fa-id-card"></i> </li>
+                <li> <a href="/login"> Ingresa </a> <i class="fas fa-sign-in-alt"></i> </li>
                 <li> <a href="#"> Mis Compras </a> <i class="fas fa-shopping-basket"></i> </li>
-
+    
             </ul>
 
         </nav>
         <!-- CONTENIDO LOGIN -->
-<form action="#" method="post">
 
-    <input type="text" name="nombre" placeholder="Nombre de usuario">
-    <input type="password" name="pass" placeholder="Elegi tu contrasenia">
+<section >
 
-    <button type="submit"> Enviar </button>
-
-</form>
-
+    <form class="formulario" action="#" method="post">
+        
+        <input class="campoformulario" type="text" name="nombre" placeholder="Nombre de usuario">
+        <input class="campoformulario" type="password" name="pass" placeholder="Elegi tu contrasenia">
+        
+        <button type="submit"> Enviar </button>
+        
+    </form>
+    
+</section>
 
         <!-- FIN LOGIN -->
 
