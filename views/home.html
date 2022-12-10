@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -31,59 +30,59 @@
             <div id="logo">
                 <img src="/images/logo-mercado-liebre.svg" alt="logo">
             </div>
-            <div class="barra-busqueda" >
+            <div class="barra-busqueda">
                 <input class="campo" type="search-text" placeholder="Buscar productos">
                 <i class="fa fa-search"></i>
             </div>
-            <p class="frase"><i class="fa-solid fa-hand-holding-dollar"></i> Compra en cuotas y sin tarjeta de credito</p>
 
         </section>
-
         <!-- Frase -->
+        <p class="frase"><i class="fa-solid fa-hand-holding-dollar"></i> Compra en cuotas y sin tarjeta de credito</p>
 
-        
         <!-- Hamburguesa  -->
         <div class="hamburguesa"> <a href="#"> <i class="fa-solid fa-bars"> </i> </a> </div>
 
     </header>
     <!-- Menu para tablet y PC -->
     <nav class="menu">
-            <ul class="lista-izquierda">
-                <li> <a href="#"> Ofertas </a> </li>
-                <li> <a href="#"> Tiendas Oficiales </a> </li>
-                <li> <a href="#"> Vender </a> </li>
-                <li> <a href="#"> Ayuda </a> </li>
+        <ul class="lista-izquierda">
+            <li> <a href="#"> Ofertas </a> </li>
+            <li> <a href="#"> Tiendas Oficiales </a> </li>
+            <li> <a href="#"> Vender </a> </li>
+            <li> <a href="#"> Ayuda </a> </li>
 
-            </ul>
+        </ul>
 
 
-            <ul class="lista-derecha">
-                <li> <a href="#"> Crea tu cuenta </a> <i class="fa-solid fa-id-card"></i> </li>
-                <li> <a href="#"> Ingresa </a> <i class="fas fa-sign-in-alt"></i> </li>
-                <li> <a href="#"> Mis Compras </a> <i class="fas fa-shopping-basket"></i> </li>
+        <ul class="lista-derecha">
+            <li> <a href="#"> Crea tu cuenta </a> <i class="fa-solid fa-id-card"></i> </li>
+            <li> <a href="#"> Ingresa </a> <i class="fas fa-sign-in-alt"></i> </li>
+            <li> <a href="#"> Mis Compras </a> <i class="fas fa-shopping-basket"></i> </li>
 
-            </ul>
+        </ul>
 
-        </nav>
-    
-<!-- CONTENIDO -->
-        <main>
+    </nav>
+
+    <!-- CONTENIDO -->
+    <main>
 
         <section>
             <img width="100%" src="/images/img-home-banner.jpg" alt="">
         </section>
-        <section>
-            <h3 class="titulares"> Basado en tu ultima compra</h3>
+
+        <h3 class="titulares"> Basado en tu ultima compra</h3>
+
+        <section class="listado-producto">
 
             <article class="producto">
-                <img width="50%" class ="imagenes" src="/images/img-cafetera-moulinex.jpg" alt="cafetera">
-            </article>
-            <section>
-                <div><i class="fa-solid fa-truck"></i></div>
-                <div class="precio">$6.770</div>
-                <div class="descuento">40% OFF</div>
+                <img class="imagenes" src="/images/img-cafetera-moulinex.jpg" alt="cafetera">
+                <div class="datos">
+                    <div class="precio">$6.770</div>
+                    <div class="descuento">40% OFF</div>
+                    <i class="fa-solid fa-truck"></i>
+                </div>
                 <div class="descripcion">Cafetera Moulinex</div>
-            </section>
+
             </article>
 
 
@@ -92,12 +91,24 @@
 
         <section>
             <h3 class="titulares"> Seccion de Ofertas</h3>
-            <article>
-                <img width="50%" src="/images/img-cafetera-moulinex.jpg" alt="cafetera">
-                <p class="precio">$6.770</p>
-                <p>40% OFF</p>
-                <p>Cafetera Moulinex</p>
-            </article>
+
+            <section class="listado-producto">
+
+                <article class="producto">
+                    <img class="imagenes" src="/images/img-cafetera-moulinex.jpg" alt="cafetera">
+                    <div class="datos">
+                        <div class="precio">$6.770</div>
+                        <div class="descuento">40% OFF</div>
+                        <i class="fa-solid fa-truck"></i>
+                    </div>
+                    <div class="descripcion">Cafetera Moulinex</div>
+
+                </article>
+
+
+            </section>
+
+
 
 
         </section>
@@ -106,13 +117,14 @@
 
     <footer>
         <section>
-            <article class="formas_pagos">
-            <i class="fa-regular fa-credit-card"></i>
-            <h3>Pagá con tarjeta o en efectivo</h3>
-            <p>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en puntos de pago. ¡Y
-                    siempre es seguro!</p>
+            <article class="formas-pagos">
+                <i class="fa-regular fa-credit-card"></i>
+                <h3>Pagá con tarjeta o en efectivo</h3>
+                <p>Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en puntos de pago. ¡Y siempre es
+                    seguro!
+                </p>
             </article>
-            <article class="formas_pagos">
+            <article class="formas-pagos">
 
                 <i class="fa-solid fa-gift"></i>
                 <h3>Envío gratis desde $ 2.500</h3>
@@ -120,7 +132,7 @@
                     beneficio de Mercado Puntos.</p>
 
             </article>
-            <article class="formas_pagos">
+            <article class="formas-pagos">
                 <i class="fa-solid fa-user-shield"></i>
                 <h3>Seguridad de principio a fin</h3>
                 <p>No te gusta? Devolvelo. En Mercado Liebre no hay nada que no puedas hacer porque estas siempre
@@ -129,12 +141,13 @@
             </article>
         </section>
         <section id="copyright">
-            <p >Copyright 1999-2020 MercadoLiebre S.R.L.</p>
+            <p>Copyright 1999-2020 MercadoLiebre S.R.L.</p>
         </section>
-            
-            
-        
+
+
+
     </footer>
+
 
     <!-- esto lo puse para que anden los iconos -->
 

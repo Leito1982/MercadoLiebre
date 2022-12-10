@@ -1,5 +1,8 @@
 * {
     box-sizing: border-box;
+    border: dotted red 1px;
+    margin: 0px;
+    padding: 0px;
 }
 
 :root {
@@ -11,41 +14,47 @@
     --Verde: #39b54a;
 }
 
+
 body {
     font-family: 'roboto', sans-serif;
     font-size: 12px;
-    background-color: var(--Gris-claro)
+    background-color: var(--Gris-claro);
+    text-align: center;
 }
+
 
 .encabezado {
     background-color: var(--Amarillo);
-    padding: 20px;
+    padding: 10px;
+    align-items: center;
 }
 
 .primera-linea {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 100%;
 }
 
-.barra-busqueda{
-    display: inline-block;
-    width: 45%;
-     text-align: center;
+.barra-busqueda {
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
 }
+
 .campo {
     width: 80%;
     color: red;
 }
 
-p.frase {   
+p.frase {
     font-size: 1em;
     text-align: center;
-    width: 100px;
+    /* width: 100px; */
 }
 
 #logo {
-    width: 40%;
+    width: 80px;
 }
 
 .hamburguesa {
@@ -60,24 +69,46 @@ p.frase {
 }
 
 .menu ul {
+    height: 30px;
     list-style: none;
-    margin: 0px;
+    align-items: center;
     padding: 0;
 }
 
-
-footer section {
-    text-align: center;
-    margin: 0px;
+.listado-producto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.producto {
+    display: inline;
+    height: auto;
+    width: 250px;
+    align-items: center;
+    /* border: #03264C 2px solid; */
+    background-color: white;
+    margin: 10px;
+}
+.datos {
+    display: flex;
+    justify-content: space-around;
+    border-top: #ebebeb ;
 }
 
 #copyright {
     text-align: left;
 }
 
+footer {
+    background-color: white;
+}
+
+
+
 /* TITULARES */
 
-* Titulos */
+
 
 .imagenes {
     width: 50%;
@@ -86,13 +117,16 @@ footer section {
 .titulares {
     font-size: 24px;
     font-weight: bold;
+    text-align: left;
+    margin: 0px;
+    color: var(--Gris-oscuro);
 }
 
 .precio {
     font-size: 18px;
     font-weight: bold;
     color: var(--Azul);
-} 
+}
 
 .descuento {
     font-size: 16px;
@@ -116,6 +150,14 @@ footer section {
     color: var(--Azul);
 }
 
+.fa-truck {
+    margin-bottom: 10px;
+    font-size: 2em;
+    color: var(--Verde);
+    border: #39b54a 1px solid ;
+    border-radius: 50%;
+    padding: 5px;
+}
 
 /* MOVIL */
 
@@ -128,13 +170,13 @@ footer section {
 /* TABLET */
 
 @media (min-width:700px) {
-    
+
     .encabezado {
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
-    
+
     #logo {
         width: 200px;
     }
@@ -142,42 +184,72 @@ footer section {
     p.frase {
         width: 30%;
     }
-    
+
     .hamburguesa {
         display: none;
     }
-    
+
     .menu {
-        
+
         display: flex;
         justify-content: space-between;
         background-color: var(--Amarillo);
     }
-    
+
     .lista-izquierda,
     .lista-derecha {
+        font-size: 1.5em;
         width: 40%;
         display: flex;
         justify-content: space-between;
     }
-    
+
     .descripcion {
         display: inline;
         font-size: 16px;
         font-weight: bold;
         color: var(--Azul);
     }
-    
-    
+
+    .listado-producto {
+        flex-direction: row;
+    }
+
+    .producto {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+
+    }
+
+    footer {
+        height: 200px;
+        /* padding: 10px; */
+    }
+
+    .formas-pagos {
+        width: 350px;
+        font-size: 1em;
+        text-align: center;
+    }
+
     footer section {
         display: flex;
         justify-content: space-around;
-        text-align: center;
+        align-items: center;
+        /* margin:10px; */
     }
-    
+
     #copyright {
         display: block;
         text-align: left;
     }
 
 }
+
+/* LAPTOP */
+
+@media (min-width:1000px) {
+    body {
+        background-color: black;
+    }
+}
+

@@ -9,7 +9,7 @@ const path = require ('path');
 
 
 // declaro la variable port y le asigno el puerto de comunicion
-let PORT = 3030
+let PORT = 3000
 
 // pongo en recepcion de request
 app.listen (PORT, console.log ('el servidor esta funcionando '+ PORT) );
