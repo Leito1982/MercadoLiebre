@@ -30,8 +30,7 @@
 
             <!-- Logo + barra de busqueda -->
             <section class="primera-linea">
-                <a href="/home"> <img id="logo" src="/images/logo-mercado-liebre.svg" alt="logo"></a>
-
+               <a href = "/home"><img id="logo" src="/images/logo-mercado-liebre.svg" alt="logo"> </a> 
                 <div class="barra-busqueda">
                     <input class="campo" type="search-text" placeholder="Buscar productos">
                     <i class="fa fa-search"></i>
@@ -61,13 +60,45 @@
                 <li> <a href="/register"> Crea tu cuenta </a> <i class="fa-solid fa-id-card"></i> </li>
                 <li> <a href="/login"> Ingresa </a> <i class="fas fa-sign-in-alt"></i> </li>
                 <li> <a href="#"> Mis Compras </a> <i class="fas fa-shopping-basket"></i> </li>
-
+    
             </ul>
 
         </nav>
         <!-- CONTENIDO LOGIN -->
 
-        <p>hola mundo </p>
+    <form class="formulario" action="#" method="POST">
+        
+        <input class="campoformulario" type="text" name="nombreyapellido" placeholder="Nombre y Apelido">
+        
+        <input class="campoformulario" type="text" name="usuario" placeholder="Nombre de usuario">
+        
+        <label for="fechanacimiento"> <h3> Fecha de nacimiento </h3></label>
+        <input class="campoformulario" type="date" name="fechanaciomiento" placeholder="mm/dd/yyyy">
+        <input class="campoformulario" type="mail" name="correo" placeholder="Correo Electronico">
+
+        <input class="campoformulario" type="text" name="domicilio" placeholder="Domicilio">
+
+        <h3> <label for="perfilusuario">Perfil de Usuario </label> </h3>
+       <label for=""><input type="radio" name="perfilusuario" checked>Comprador </label> 
+       <label for=""><input type="radio" name="perfilusuario" >Vendedor </label> 
+        
+        <label for="intereses"> <h3> Intereses </h3></label>
+        <label for=""><input type="checkbox" name="intereses">Electro </label>
+        <label for=""><input type="checkbox" name="intereses">Moda </label>
+        <label for=""><input type="checkbox" name="intereses">Hogar </label>
+        <label for=""><input type="checkbox" name="intereses"> Jugueteria</label>
+        <label for=""><input type="checkbox" name="intereses">Vida Sana</label>
+        
+        <label for=""> <h3> Elegi tu foto de usuario </h3></label>
+        <input type="file" name="achivo">
+
+        <input class="campoformulario" type="password" name="pass" placeholder="Elegi tu contrasenia">
+        <input class="campoformulario" type="password" name="pass" placeholder="Confirmar contrasenia">
+
+        <button class="enviar" type="submit"> Enviar </button>
+        <button class="borrar" type="reset"> Borrar </button>
+        
+    </form>
 
         <!-- FIN LOGIN -->
 

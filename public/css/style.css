@@ -31,8 +31,6 @@ body {
 .primera-linea {
     display: flex;
     justify-content: space-around;
-    width: 80%;
-    flex-grow: 1;
 }
 
 .barra-busqueda {
@@ -43,9 +41,7 @@ body {
 }
 
 .campo {
-    height: auto;
-    width: 100%;
-    color: red;
+    height: 30px;
 }
 
 p.frase {
@@ -54,7 +50,7 @@ p.frase {
 }
 
 #logo {
-    width: 100px;
+    width: 100%;
 }
 
 .hamburguesa {
@@ -110,6 +106,7 @@ footer {
 
 .pagosfooter {
     width: 70%;
+    margin: auto;
 }
 
 
@@ -175,6 +172,56 @@ footer {
     font-size: 1.5em;
 }
 
+/* Formulario */
+
+.formulario {
+    background-color: var(--Gris-claro);
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 20px;
+    text-align: left;
+}
+
+
+.campoformulario {
+    width: 100%;
+    height: 30px;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    margin: 10px;
+    border-radius: 15px;
+}
+
+.enviar {
+
+    border-radius: 15px;
+    outline: none;
+    height: 30px;
+    width: 100%;
+    background-color: #1259c3;
+    color: white;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.borrar {
+
+    border-radius: 15px;
+    outline: none;
+    height: 30px;
+    width: 100%;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+
+
 /* MOVIL */
 
 .menu {
@@ -195,8 +242,13 @@ footer {
         width: 180px;
     }
 
+    .campo {
+        width: 80%;
+    }
+
     p.frase {
         width: 35%;
+        font-size: 16px;
     }
 
     .hamburguesa {
@@ -208,16 +260,18 @@ footer {
         display: flex;
         justify-content: space-between;
         background-color: var(--Amarillo);
+        font-size: 16px;
+        text-decoration: none;
     }
 
     .lista-izquierda,
     .lista-derecha {
-        font-size: 1.2em;
-
         display: flex;
         flex-basis: 350px;
         justify-content: space-around;
+        text-decoration: none;
     }
+    
 
     .descripcion {
         display: inline;
@@ -253,7 +307,7 @@ footer {
         margin-top: 10px;
         margin-bottom: 10px;
         width: 350pc;
-        font-size: 1.3em;
+        font-size: 1em;
         text-align: center;
     }
 
@@ -262,59 +316,25 @@ footer {
         text-align: left;
     }
 
+    .formulario {
+        width: 500px;
+        margin: auto;
+    }
+    .primera-linea {
+        justify-content: space-around;
+        margin: auto;
+    }
 }
+
 
 /* LAPTOP */
 
 @media (min-width:900px) {
 
-    .primera-linea {
-        justify-content: space-around;
-        margin: auto;
-    }
 
     .barra-busqueda {
-        width: 400px;
-        height: 30px;
+        width: 500px;
+      
     }
-
-    .campo {
-        height: 30px;
-    }
-
-    p.frase {
-        font-size: 1.5em;
-    }
-}
-
-/* Formulario */
-
-.formulario {
-    background-color: var(--Gris-claro);
-    height: 120px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    margin: 20px;
-}
-
-.campoformulario {
-    border-radius: 50 px;
-    border: none;
-    outline: none;
-    height: 30px;
-    width: 90%;
-}
-
-.enviar {
-
-    border-radius: 50 px;
-    /* border: none; */
-    outline: none;
-    height: 30px;
-    width: 90%;
-    background-color: #1259c3;
-    color: white;
-    font-weight: bold;
+    
 }
