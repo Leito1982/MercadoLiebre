@@ -89,7 +89,7 @@ p.frase {
 .producto {
     display: inline;
     height: auto;
-    width: 250px;
+    width: 350px;
     align-items: center;
     /* border: #03264C 2px solid; */
     background-color: white;
@@ -145,7 +145,8 @@ footer {
 
 
 .descripcion {
-    display: none;
+    display: block;
+    visibility: hidden;
     margin-bottom: 10px;
 }
 
@@ -237,7 +238,7 @@ footer {
 
 /* TABLET */
 
-@media (min-width:700px) {
+@media (min-width:600px) {
 
     .encabezado {
         display: flex;
@@ -261,15 +262,17 @@ footer {
     .hamburguesa {
         display: none;
     }
-
+.producto {
+    width: 300px;
+}
     .menu {
 
         display: flex;
         justify-content: space-between;
         background-color: var(--Amarillo);
-        font-size: 16px;
-        /* text-decoration: none; */
-    }
+        font-size: 12px;
+        
+       }
 
     a {
         text-decoration: none ;
@@ -277,7 +280,7 @@ footer {
     }
     a:hover {
         font-weight: bold;
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .lista-izquierda,
@@ -288,21 +291,12 @@ footer {
         text-decoration: none;
     }
 
-
-
-
     .listado-producto {
         flex-direction: row;
         flex-wrap: wrap;
     }
 
-    /* .producto {
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
-   
-    } */
-
-
-    footer {
+     footer {
         height: auto;
         width: auto;
     }
@@ -354,7 +348,7 @@ footer {
     }
 
     .producto:hover .descripcion {
-        display: inline;
+        visibility: visible;
         font-size: 16px;
         font-weight: bold;
         color: var(--Azul);
@@ -373,6 +367,10 @@ footer {
     }
     i:hover {
         color: var(--Verde);
+    }
+
+    .producto {
+        width: 200px;
     }
 
 }
